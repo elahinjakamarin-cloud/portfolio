@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELAHINJAKA Marin - Administrateur Système & Réseau</title>
+    <link rel="stylesheet" href="./CSS/marin.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div id="logo">
+                <img src="./IMAGE/ICON/server(1).svg" alt="Logo Serveur" width="30" height="30">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn" aria-label="Menu de navigation"></label>
+            
+            <nav id="nav">
+                <ul class="nav-menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#Projets">Projets</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <div id="moi">
+                <img src="./IMAGE/image/marin.jpeg" alt="Photo de ELAHINJAKA Marin" width="200" height="200">
+            </div>
+            <div id="tsihaiko">
+                <p id="para">Bonjour, je suis</p> 
+                <h1>ELAHINJAKA Marin</h1> 
+                <h2>Administrateur <br>
+                    <span style="--i:4;" data-text="Système">Système</span>
+                    <span style="--i:3;" data-text="et">et</span>
+                    <span style="--i:2;" data-text="Réseau">Réseau</span>
+                </h2>
+                <p class="description">
+                    Passionné par les infrastructures informatiques, la gestion de réseaux sécurisés et l'administration système. 
+                </p>
+                <div id="lien">
+                    <a href="https://github.com/elahinjakamarin-cloud?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub">
+                        <img src="./IMAGE/ICON/git.png" class="iconl github-icon" alt="GitHub">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61583065894934" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="./IMAGE/ICON/facebook.png" class="iconl" alt="Facebook">
+                    </a>
+                    <a href="#" class="btn-cv">Télécharger CV</a>
+                </div>
+            </div>
+        </section>
+        <section class="projects-section">
+            <h2 id="iii" class="pro">Mes Projets</h2>
+            <div id="Projets">
+                <article class="project-card">
+                    <img class="imga" src="./IMAGE/image/reseaux.png" alt="Création de VLAN" loading="lazy">
+                    <div class="card-body">
+                        <p class="paaa">Création et configuration de VLAN</p>
+                        <a class="lieen" href="videos.html">Voir le projet</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img class="imga" src="./IMAGE/image/calculator.png" alt="Calculatrice" loading="lazy">
+                    <div class="card-body">
+                        <p class="paaa">Calculatrice en ligne</p>
+                        <a class="lieen" href="https://elahinjakamarin-cloud.github.io/calculer/" target="_blank" rel="noopener">Voir le projet</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img class="imga" src="./IMAGE/image/calculator.png" alt="Projet Réseau" loading="lazy">
+                    <div class="card-body">
+                        <p class="paaa">Supervision Réseau</p>
+                        <a class="lieen" href="https://elahinjakamarin-cloud.github.io/calculer/" target="_blank" rel="noopener">Voir le projet</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="Contact">
+            <h2 id="piso">Me Contacter</h2>
+            <form id="cont" action="#" method="POST">
+                <label class="pc" for="user-name">Nom complet</label>
+                <input class="form-input" id="user-name" type="text" placeholder="Votre nom complet" required>
+                
+                <label class="pc" for="user-email">Email</label>
+                <input class="form-input" id="user-email" type="email" placeholder="email@exemple.com" required>
+                
+                <label class="pc" for="user-message">Message</label>
+                <textarea id="user-message" name="message" placeholder="Votre message..." required></textarea>
+                
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
